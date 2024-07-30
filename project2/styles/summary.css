@@ -1,0 +1,243 @@
+html {
+	background-image: url("../images/bats.gif");	
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	max-width: 960px;
+	width: 95%;                        /* fixed width was 800 */
+	background-color: white;
+	margin: 0 auto; 
+	padding-left: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+td:nth-child(3){
+    background-color: #F5DEB3;
+}
+
+/* Header */
+header {
+	border-bottom: solid black 5px;
+	background-image: -webkit-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-image: -moz-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-image: -o-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	padding: .9375em 1.875%;  /* 15 / 16; 15 / 800 x 100 */
+	margin-bottom: -20px;
+	text-align: center; /* Center-align header text */
+}
+
+header img { 
+	float: none; /* Remove float to center the image */
+	padding: 0; /* Reset padding */
+	width: 10.6%;
+	max-width: 85px;
+	min-width: 40px;
+}
+
+header h2 {
+	font-size: 230%;
+}
+
+header h3 {
+	font-size: 125%;
+	padding-bottom: .75em;
+}
+
+/* Navbar */
+.navbar {
+	display: flex; /* Use flexbox for navbar */
+	justify-content: space-around; /* Space out navbar items */
+	background-color: #333;
+	padding: 0 5%; /* Adjust padding */
+}
+
+.navbar a {
+	color: orange;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: black;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: orange;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Sidebar */
+aside {
+	margin: 0;
+	padding: 1.25em 0;
+}
+
+.main-content {
+	margin-left: 20%; /* Adjust margin to create space between sidebar and section */
+	padding-bottom: 20px; /* Add padding to separate from footer */
+	width: 75%; /* Adjust width to occupy available space */
+}
+
+.container {
+	display: flex; /* Use flexbox for container */
+}
+
+.sidebar {
+	width: 20%; /* Adjust width to be responsive */
+	padding: 20px;
+	margin-bottom: 0;
+	float: left;
+	background-color: #f4f4f4; /* Optional background for visibility */
+}
+
+.sidebar ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sidebar ul li {
+	margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.active, .x {
+	border: solid black 2px;
+	background-color: orange;
+}
+
+/* Section */
+section {
+	padding: 2em 5%;
+}
+
+section h1 { 
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+
+section h2 {
+	font-size: 115%;
+	margin: .8em 0 .4em 0;
+}
+
+section p {
+	margin-bottom: .5em;
+}
+
+section a {
+	font-weight: bold;
+	color: orange;
+	text-decoration: none;
+}
+
+section a:link, main a:visited { 
+	color: orange; 
+}
+
+section a:hover, main a:focus { 
+	color: green;
+}
+
+/* Footer */
+footer { 
+	border-top: 2px solid black;
+	padding: .9375em 1.875%;
+	background-image: -webkit-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+	background-image: -moz-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+	background-image: -o-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+	background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+	text-align: center; /* Center-align footer text */
+}
+
+footer p {
+	font-size: 90%;
+}
+
+/* Mobile Menu */
+#mobile_menu {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+	html {
+		background-image: none;
+	}
+	body {
+		font-size: 90%;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	header h2 {
+		font-size: 200%;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	header h2 {
+		font-size: 180%;
+	}
+	header h3 {
+		font-size: 115%;
+	}
+	section h1 {
+		font-size: 130%;
+	}
+}

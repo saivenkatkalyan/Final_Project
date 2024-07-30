@@ -1,0 +1,44 @@
+h1 {
+    
+    color: rgb(119, 119, 210);
+    
+}
+h2{
+    border-top: dashed rgb(119, 225, 225);
+}
+button{
+    background-color: rgb(110, 215, 215);
+    
+}
+body{
+    font:90% Arial, Helvetica, sans-serif;
+    margin:20px;
+    border: solid blue;
+    padding: 15px
+}
+label{
+color: rgb(119, 119, 210);
+font-weight: solid;
+text-align:left;
+float: left;
+width: 8em;
+font-weight: bold;
+text-align: left;
+}
+
+input,select{
+    width: 15em;
+    margin-left: 1em;
+    margin-bottom:.5em;
+}
+input:focus{
+    border: 2px solid navy;
+}
+button{
+    width: 7em;
+    box-shadow: 2px 2px 0navy;
+    
+}
+button{
+    margin-right: 10.10em;
+}
